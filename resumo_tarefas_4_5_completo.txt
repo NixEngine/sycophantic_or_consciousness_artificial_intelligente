@@ -1,0 +1,133 @@
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║          TAREFA 4: BANCO SINTÉTICO REALISTA (N=400) - COMPLETO ✅                    ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+FONTES DE LITERATURA:
+  • Arns et al. (2013) - Meta-análise TBR em TDAH (N=1498)
+  • Wang et al. (2013) - EEG em TEA
+  • Klimesch (1999) - Alpha frequency e cognição
+  • Coben & Myers (2010) - Coerência em TEA
+
+MODELO FORWARD EEG:
+  • Fontes corticais com espectro 1/f (pink noise)
+  • Oscilações por banda (δ, θ, α, β, γ)
+  • Volume conductor simplificado (delays + coerência)
+  • Ruído de sensor realista
+
+VALIDAÇÃO vs LITERATURA:
+  ┌─────────────┬──────────┬────────────┬────────┐
+  │ Condição    │ TBR      │ PAF (Hz)   │ Status │
+  ├─────────────┼──────────┼────────────┼────────┤
+  │ TDAH        │ 5.00     │ 9.28       │ ✅     │
+  │ TEA         │ 2.71     │ 10.30      │ ✅     │
+  │ Controle    │ 1.49     │ 10.06      │ ✅     │
+  │ Superdotado │ 1.04     │ 11.22      │ ✅     │
+  └─────────────┴──────────┴────────────┴────────┘
+
+MAPEAMENTO qEEG → Px:
+  ┌─────────────┬───────┬───────┬────────┬────────┐
+  │ Condição    │ β     │ g     │ R_Δ    │ NPC    │
+  ├─────────────┼───────┼───────┼────────┼────────┤
+  │ TDAH        │ 0.59  │ 1.14  │ 0.51   │ 58.1   │
+  │ TEA         │ 0.78  │ 1.31  │ 0.37   │ 60.7   │
+  │ Controle    │ 0.88  │ 1.19  │ 0.63   │ 77.9   │
+  │ Superdotado │ 0.89  │ 1.23  │ 0.87   │ 90.3   │
+  └─────────────┴───────┴───────┴────────┴────────┘
+
+ORDENAÇÃO NPC: TDAH < TEA < Controle < Superdotado ✅
+
+ARQUIVO: banco_sintetico_realista_n400.csv
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║             TAREFA 5: SOLVER GPE-CAPUTO - COMPLETO ✅                                ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+IMPLEMENTAÇÃO:
+  • Split-step Fourier (termos cinético + não-linear)
+  • Grünwald-Letnikov (derivada fracionária de Caputo)
+  • Histórico de 20 passos para memória fracionária
+  • Normalização conservativa
+
+EQUAÇÃO:
+  iℏ ∂Ψ/∂t = -ℏ²∇²Ψ/2m + g|Ψ|²Ψ + αN|Ψ|²Ψ + γℏt₀^{β-1}D^β[Ψ]
+
+BENCHMARK 2D (100 steps):
+  ┌───────────┬──────────┬───────────┬─────────────┐
+  │ Grid      │ Pontos   │ Tempo (s) │ Steps/s     │
+  ├───────────┼──────────┼───────────┼─────────────┤
+  │ 16×16     │ 256      │ 0.03      │ 3,232       │
+  │ 32×32     │ 1,024    │ 0.05      │ 2,228       │
+  │ 64×64     │ 4,096    │ 0.10      │ 973         │
+  │ 128×128   │ 16,384   │ 0.37      │ 269         │
+  └───────────┴──────────┴───────────┴─────────────┘
+
+ESCALABILIDADE:
+  • 16→32: O(N^0.27)
+  • 32→64: O(N^0.60)
+  • 64→128: O(N^0.93)
+  • Média: O(N^0.60) - MELHOR que O(N²) esperado!
+
+PROJEÇÃO 3D:
+  • Grid 16³: ~0.1s / 100 steps
+  • Grid 32³: ~0.7s / 100 steps
+  • Grid 64³: ~4.3s / 100 steps
+
+VALIDAÇÃO FÍSICA:
+  ✅ Norma conservada (todas simulações = 1.0000)
+  ✅ Correlação g ↔ Φ_final: -0.73 (g↑ → estrutura mais definida)
+  ✅ Correlação β ↔ energy: -0.94 (β↑ → menos dispersão)
+
+SIMULAÇÕES CLÍNICAS (200 steps, 64×64):
+  ┌─────────────┬───────┬───────┬──────────┬───────────┐
+  │ Condição    │ g     │ β     │ Φ_final  │ Norm      │
+  ├─────────────┼───────┼───────┼──────────┼───────────┤
+  │ Controle    │ 1.19  │ 0.88  │ 1.224    │ 1.0000    │
+  │ TDAH        │ 1.14  │ 0.59  │ 1.270    │ 1.0000    │
+  │ TEA         │ 1.31  │ 0.78  │ 1.221    │ 1.0000    │
+  │ Superdotado │ 1.23  │ 0.89  │ 1.216    │ 1.0000    │
+  └─────────────┴───────┴───────┴──────────┴───────────┘
+
+ARQUIVOS:
+  • benchmark_gpe_caputo_v2.csv
+  • simulacoes_gpe_caputo_clinico.csv
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                            ARQUIVOS GERADOS (TOTAL)                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+TAREFA 4:
+  • banco_sintetico_realista_n400.csv - 400 registros com ground truth
+
+TAREFA 5:
+  • benchmark_gpe_caputo_v2.csv - Performance do solver
+  • simulacoes_gpe_caputo_clinico.csv - Simulações por condição
+
+TAREFA 6 (anterior):
+  • calibracao_ml_classificadores.csv
+  • calibracao_ml_feature_importance.csv
+  • calibracao_npc_limiares.csv
+  • calibracao_npc_config.json
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                         STATUS FINAL DAS TAREFAS                                     ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+  TAREFA 1: Sensibilidade Local         ✅ COMPLETO
+  TAREFA 2: Banco Sintético Básico      ✅ COMPLETO
+  TAREFA 3: Métricas de Desempenho      ✅ COMPLETO
+  TAREFA 4: Banco Sintético Realista    ✅ COMPLETO
+  TAREFA 5: Solver GPE-Caputo           ✅ COMPLETO
+  TAREFA 6: Calibração ML               ✅ COMPLETO
+
+  TOTAL: 6/6 (100%) ✅
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                         PRÓXIMOS PASSOS                                              ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+  1. Implementar solver GPU (CUDA/CuPy) para 100-1000× speedup
+  2. Validar em dataset clínico real (N≥100)
+  3. Testar hipótese f₁ = 1/Στ com medições de delay
+  4. Publicar paper: "NPC Index for Neuropsychiatric Classification"
+

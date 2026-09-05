@@ -1,0 +1,100 @@
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    TURR v2.0 - EQUAÇÕES FUNDAMENTAIS                       ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+1. EQUAÇÃO MESTRA GPE-CAPUTO (corrigida):
+─────────────────────────────────────────
+iℏ ∂Ψ/∂t = -ℏ²∇²Ψ/2m + g|Ψ|²Ψ + αN(r,t)|Ψ|²Ψ + γℏt₀^{β-1} D^β_t[Ψ]
+
+onde D^β_t é derivada de Caputo:
+D^β_t[Ψ] = (1/Γ(1-β)) ∫₀ᵗ Ψ'(s)/(t-s)^β ds
+
+2. HOLONOMIA GEOMÉTRICA R_Δ:
+───────────────────────────
+Δφ_cycle = -ω × Σᵢ τᵢ  (soma dos atrasos no ciclo)
+R_Δ = cos(Δφ_cycle)
+R_Δ_norm = (R_Δ + 1) / 2 ∈ [0, 1]
+
+3. PLV (Phase Locking Value):
+────────────────────────────
+PLV_ij = |⟨exp(i[φᵢ(t) - φⱼ(t - τᵢⱼ)])⟩_t|
+
+4. C-OPERATOR UNIVERSAL:
+───────────────────────
+C(G, {φᵢ}, {τᵢⱼ}) → (PLV_matrix, R_Δ_global, regime)
+
+regime ∈ {TRAVADO, MARGINAL, PARCIAL, DESORDENADO}
+
+5. QUANTUM DE CIRCULAÇÃO:
+────────────────────────
+κ = 2π × (ℏ/m) × (λ_dB / R_vortex) × n,  n ∈ ℤ
+
+6. REYNOLDS SEMÂNTICO:
+─────────────────────
+Re_S = (U × L) / ν_eff
+ν_eff = D_eff / η
+
+7. TENSOR DE REALIDADE:
+──────────────────────
+R = (R*, R_score, R_Δ) ∈ [0,1]³
+
+R* = f(H_rede, N_feeds, J_jitter, D_lex)
+R_score = (1/N) Σᵢ wᵢ × δ_raw(i)
+R_Δ = mean(cos(Δφ_cycle)) sobre triângulos
+
+8. INFORMAÇÃO INTEGRADA (Φ):
+───────────────────────────
+Φ ∝ min_{partições} MI(X₁; X₂)
+
+9. REGIME ESTATÍSTICO (F₃):
+──────────────────────────
+F₃ = ⟨X³⟩⟨X⟩ / ⟨X²⟩²
+
+GAMMA: F₃ < 1.5
+EXPONENCIAL: 1.5 ≤ F₃ < 2.5
+QUASE_LOG_NORMAL: 2.5 ≤ F₃ < 4
+LOG_NORMAL: F₃ ≥ 4
+
+10. ÍNDICE NPC (Neuro-Px de Condição):
+─────────────────────────────────────
+NPC = (TBR, P_θ, P_α, P_γ, Coer_S, Coer_L, R_Δ, Φ, b₀, b₁, Re_S)
+
+Score_Global = Integration_Score - TBR_Penalty + Alpha_Bonus
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                        MAPEAMENTO qEEG → Px-GENESIS                        ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+g (não-linearidade) = 0.5 + (Coer_curta - 0.5) × 2.0
+β (memória)         = 0.7 - (TBR - 2.5) × 0.05
+N_mean (narrativo)  = P_gamma_TP / 4.0
+R_Δ_est             = Coer_longa / 0.7
+Φ_est               = (Coer_curta + 2×Coer_longa) / 3
+
+b₀_est = 3 + (Coer_curta - 0.65) × 10
+b₁_est = 2 + (Coer_longa - 0.45) × 8
+Re_S   = (P_gamma_TP / TBR) × 100
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         LIMIARES E CLASSIFICAÇÕES                          ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+ERC:
+  TRAVADO:     R_Δ ≥ 0.9, |μ| < 10°
+  MARGINAL:    0.7 ≤ R_Δ < 0.9
+  PARCIAL:     0.5 ≤ R_Δ < 0.7
+  DESORDENADO: R_Δ < 0.5
+
+TOPOLOGIA:
+  FRAGMENTADO: b₀ > 5, b₁ < 3
+  INTEGRADO:   b₀ ≤ 3, b₁ > 4
+  COMPLEXO:    b₀ > 4, b₁ > 3
+  SIMPLES:     outros
+
+FLUXO:
+  LAMINAR_LENTO: Re_S < 50
+  LAMINAR:       50 ≤ Re_S < 100
+  TRANSICIONAL:  100 ≤ Re_S < 200
+  TURBULENTO:    Re_S ≥ 200
+

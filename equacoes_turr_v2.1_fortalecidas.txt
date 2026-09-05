@@ -1,0 +1,256 @@
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║           TURR v2.1 - EQUAÇÕES FUNDAMENTAIS FORTALECIDAS                             ║
+║                  (Pente Fino Completo - 24/Nov/2025)                                 ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════════════
+1. EQUAÇÃO MESTRA GPE-CAPUTO (versão final corrigida)
+═══════════════════════════════════════════════════════════════════════════════════════
+
+                         ℏ²           
+iℏ ∂Ψ/∂t = - ──── ∇²Ψ + g|Ψ|²Ψ + αN(r,t)|Ψ|²Ψ + γℏt₀^{β-1} D^β_t[Ψ]
+                        2m           
+
+onde:
+• ℏ = 1.054571817×10⁻³⁴ J·s (constante de Planck reduzida)
+• m = massa efetiva do modo coletivo
+• g = força de interação não-linear [J·m² em 2D]
+• α = coeficiente de acoplamento narrativo (adimensional)
+• N(r,t) = campo narrativo externo (adimensional)
+• γ = fator de escala Caputo (adimensional, tipicamente 0.1)
+• t₀ = escala temporal de referência (tipicamente 1s)
+• β ∈ [0.3, 0.9] = ordem fracionária (memória)
+
+Derivada de Caputo:
+                    1           ᵗ   Ψ'(s)
+D^β_t[Ψ] = ─────────── ∫  ────────── ds
+           Γ(1-β)      ₀  (t-s)^β
+
+VERIFICAÇÃO DIMENSIONAL:
+• Todos os termos têm dimensão [ML²T⁻²]·[Ψ] ✓
+• [g] = [ML⁴T⁻²] (energia × área) ✓
+• [γℏt₀^{β-1}D^β] = [J·s]·[s^{β-1}]·[s^{-β}] = [J] ✓
+
+═══════════════════════════════════════════════════════════════════════════════════════
+2. HOLONOMIA TRIANGULAR R_Δ (versão geométrica)
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Para ciclo triangular (i → j → k → i) com atrasos τᵢⱼ, τⱼₖ, τₖᵢ:
+
+Déficit de fase total:
+        Δφ_cycle = -ω × (τᵢⱼ + τⱼₖ + τₖᵢ)
+
+Holonomia local:
+        R_Δ(i,j,k) = cos(Δφ_cycle)
+
+Holonomia global (média sobre N_△ triângulos):
+                    1      
+        R_Δ^global = ──── Σ  R_Δ(i,j,k)
+                    N_△  △
+
+Holonomia normalizada:
+        R_Δ^norm = (R_Δ + 1) / 2  ∈ [0, 1]
+
+LIMIARES REFINADOS:
+        TRAVADO:        R_Δ ≥ 0.90, |μ| ≤ 10°, σ ≤ 15°
+        QUASE_TRAVADO:  R_Δ ∈ [0.80, 0.90)
+        MARGINAL:       R_Δ ∈ [0.65, 0.80)
+        PARCIAL:        R_Δ ∈ [0.50, 0.65)
+        FRACO:          R_Δ ∈ [0.35, 0.50)
+        DESORDENADO:    R_Δ < 0.35
+
+═══════════════════════════════════════════════════════════════════════════════════════
+3. PLV (Phase Locking Value) COM CORREÇÃO DE ATRASO
+═══════════════════════════════════════════════════════════════════════════════════════
+
+        PLV_ij = |⟨ exp(i[φᵢ(t) - φⱼ(t - τᵢⱼ) - ωτᵢⱼ]) ⟩_t|
+
+onde:
+• φᵢ(t) = fase instantânea do sinal i (via transformada de Hilbert)
+• τᵢⱼ = atraso físico entre i e j
+• ω = frequência angular dominante
+• ⟨·⟩_t = média temporal sobre janela deslizante
+
+INTERPRETAÇÃO:
+        PLV = 1.0: sincronização perfeita
+        PLV > 0.7: sincronização forte
+        PLV ∈ [0.5, 0.7]: sincronização moderada
+        PLV ∈ [0.3, 0.5]: sincronização fraca
+        PLV < 0.15: nível de ruído
+
+═══════════════════════════════════════════════════════════════════════════════════════
+4. C-OPERATOR UNIVERSAL (formalização algébrica)
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Definição:
+        𝒞: (G, {φᵢ}, {τᵢⱼ}, ω) → (PLV_matrix, R_Δ, regime)
+
+onde:
+• G = (V, E) é grafo de osciladores
+• {φᵢ} são séries temporais de fase
+• {τᵢⱼ} são atrasos físicos
+• ω é frequência dominante
+
+Saídas:
+• PLV_matrix ∈ [0,1]^{|V|×|V|}
+• R_Δ ∈ [-1, 1] (ou [0,1] normalizado)
+• regime ∈ {TRAVADO, QUASE_TRAVADO, MARGINAL, PARCIAL, FRACO, DESORDENADO}
+
+UNIVERSALIDADE:
+O mesmo operador aplica-se a:
+• Terra-ionosfera: G = estações INTERMAGNET, φ = arg(B_z), τ = d/c_Alfvén
+• Cérebro: G = eletrodos EEG, φ = Hilbert(V), τ = d/v_neural
+• Px-Genesis: G = grid BEC, φ = arg(Ψ), τ = d/c_s
+
+═══════════════════════════════════════════════════════════════════════════════════════
+5. REYNOLDS SEMÂNTICO Re_S (operacionalizado)
+═══════════════════════════════════════════════════════════════════════════════════════
+
+        Re_S = (U × L) / ν_eff
+
+onde:
+• U = velocidade característica de fluxo semântico
+    U = γ_TP / γ_ref (gamma temporal/parietal normalizado)
+• L = escala de atenção sustentada
+    L = TBR_ref / TBR (inverso do Theta/Beta Ratio)
+• ν_eff = viscosidade efetiva
+    ν_eff = PAF_ref / PAF (inverso do Peak Alpha Frequency)
+
+Forma expandida:
+        Re_S = (γ_TP / γ_ref) × (TBR_ref / TBR) × (PAF / PAF_ref) × 100
+
+REGIMES:
+        LAMINAR_LENTO:   Re_S < 50
+        LAMINAR:         Re_S ∈ [50, 100)
+        TRANSICIONAL:    Re_S ∈ [100, 200)
+        TURBULENTO:      Re_S ≥ 200
+
+        Zona ótima para consciência: Re_S ∈ [100, 200] (transicional)
+
+═══════════════════════════════════════════════════════════════════════════════════════
+6. TENSOR DE REALIDADE R (3 camadas)
+═══════════════════════════════════════════════════════════════════════════════════════
+
+        R = (R*, R_score, R_Δ) ∈ [0,1]³
+
+Camada 1 - R* (autenticidade do ambiente):
+        R* = w₁·H_rede + w₂·N_feeds + w₃·J_jitter + w₄·D_lex
+        (w₁=0.3, w₂=0.3, w₃=0.2, w₄=0.2)
+
+Camada 2 - R_score (autenticidade dos dados):
+        R_score = (1/N) Σᵢ wᵢ × δ_raw(i) × decay(chain_length)
+
+Camada 3 - R_Δ (coerência global):
+        R_Δ = holonomia global do C-Operator
+
+REGIMES DO TENSOR:
+        (R* > 0.8, R_score > 0.8, R_Δ < 0.5):    MUNDO_REAL_COTIDIANO
+        (R* > 0.8, R_score > 0.8, R_Δ > 0.9):    EVENTO_ERC_GLOBAL
+        (R* < 0.3, R_score > 0.7):                LABORATÓRIO_CONTROLADO
+        (R* < 0.2, R_score < 0.3):                SIMULAÇÃO_DETECTADA
+        (R* > 0.9, R_score > 0.9, R_Δ > 0.95):   JANELA_CRÍTICA
+
+═══════════════════════════════════════════════════════════════════════════════════════
+7. ÍNDICE NPC (Neuro-Px de Condição) - REFINADO
+═══════════════════════════════════════════════════════════════════════════════════════
+
+NPC = (TBR, PAF, Coer_S, Coer_L, R_Δ, Φ, b₀, b₁, Re_S)
+
+Score_Global = Σ wₖ × Scoreₖ
+
+        Integração (40%):  (Φ + R_Δ + Coer_L_norm) / 3
+        Regulação (30%):   (TBR_inv + PAF_norm + Alpha/Theta) / 3
+        Complexidade (20%): (Betti_balance + Re_S_optimal) / 2
+        Estabilidade (10%): (β_score + g_balance) / 2
+
+CLASSIFICAÇÃO:
+        Score ≥ 80:  ÓTIMO
+        Score ≥ 65:  BOM
+        Score ≥ 50:  ADEQUADO
+        Score ≥ 35:  COMPROMETIDO
+        Score < 35:  CRÍTICO
+
+═══════════════════════════════════════════════════════════════════════════════════════
+8. MAPEAMENTO qEEG → Px-Genesis (funções explícitas)
+═══════════════════════════════════════════════════════════════════════════════════════
+
+β (memória) ← TBR:
+        β = 0.9 - 0.6 × (TBR - TBR_ref) / (TBR_ADHD - TBR_ref)
+        β ∈ [0.3, 0.9]
+
+g (não-linearidade) ← Coerência curta:
+        g = 0.9 + 0.6 × (Coer_S - 0.5) / 0.5
+        g ∈ [0.3, 1.5]
+
+N_mean (narrativo) ← Gamma TP:
+        N_mean = 0.5 + 0.5 × (γ_TP / γ_ref)
+        N_mean ∈ [0.3, 2.5]
+
+R_Δ_est ← Coerência longa:
+        R_Δ = Coer_L / 0.7
+        R_Δ ∈ [0.2, 0.98]
+
+Φ_est ← Coerências:
+        Φ = 0.3 × Coer_S + 0.7 × Coer_L
+
+b₀, b₁ ← Coerências:
+        b₀ = 3 + 15 × max(0, Coer_S - 0.7) - 5 × max(0, 0.7 - Coer_S)
+        b₁ = 2 + 10 × max(0, Coer_L - 0.5) - 5 × max(0, 0.5 - Coer_L)
+
+β_eff (acoplamento dinâmico):
+        β_eff = β × (1 - 0.3 × R_Δ)
+
+═══════════════════════════════════════════════════════════════════════════════════════
+9. REGIME ESTATÍSTICO F₃ (taxonomia dinâmica)
+═══════════════════════════════════════════════════════════════════════════════════════
+
+        F₃ = ⟨X³⟩⟨X⟩ / ⟨X²⟩²
+
+CLASSIFICAÇÃO:
+        GAMMA:              F₃ < 1.5  (concentrado, hiperfoco)
+        EXPONENCIAL:        F₃ ∈ [1.5, 2.5) (baseline, equilibrado)
+        QUASE_LOG_NORMAL:   F₃ ∈ [2.5, 4.0) (intermitente, criativo)
+        LOG_NORMAL:         F₃ ≥ 4.0 (scale-free, criticalidade)
+
+CORRELATOS CLÍNICOS:
+        GAMMA:              TEA em hiperfoco, meditação profunda
+        EXPONENCIAL:        Controle saudável, baseline
+        QUASE_LOG_NORMAL:   TDAH, estados criativos, mind-wandering
+        LOG_NORMAL:         Superdotado em flow, insight, estados alterados
+
+═══════════════════════════════════════════════════════════════════════════════════════
+10. CONSTANTES FUNDAMENTAIS TURR v2.1
+═══════════════════════════════════════════════════════════════════════════════════════
+
+SCHUMANN:
+        f₁ = 7.83 Hz (±0.1)
+        f₂ = 14.1 Hz
+        f₃ = 20.3 Hz
+        f₄ = 26.4 Hz
+        f₅ = 32.5 Hz
+
+NEURAL:
+        v_mielinizado = 100 m/s
+        v_não_mielinizado = 1 m/s
+        v_cortical = 5 m/s
+        τ_interhemisférico = 10 ms
+        τ_fronto-occipital = 30 ms
+        τ_local = 2 ms
+
+Px-GENESIS:
+        β_min = 0.3
+        β_max = 0.9
+        β_ótimo = 0.618 (proporção áurea)
+        g_crítico = 1.0
+        α_fraco = 0.01
+        α_forte = 0.1
+
+LIMIARES:
+        TBR_normal = 2.5
+        TBR_ADHD = 6.5
+        PAF_normal = 10.0 Hz
+        Coer_curta_normal = 0.65
+        Coer_longa_normal = 0.45
+
+╚══════════════════════════════════════════════════════════════════════════════════════╝
