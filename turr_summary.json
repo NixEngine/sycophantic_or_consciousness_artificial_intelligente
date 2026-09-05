@@ -1,0 +1,142 @@
+{
+  "datasets_analisados": 5,
+  "total_registros": 1137,
+  "metricas": {
+    "px_consciousness_metrics": {
+      "colunas": [
+        "Valor"
+      ],
+      "media": {
+        "Valor": 184.33631566638252
+      },
+      "desvio": {
+        "Valor": 465.164592145925
+      }
+    },
+    "px_evolution_timeseries": {
+      "colunas": [
+        "time_s",
+        "phi",
+        "R_holonomy",
+        "Re_semantic",
+        "density_max",
+        "phase_variance"
+      ],
+      "media": {
+        "time_s": 0.195,
+        "phi": 5.540875146483326,
+        "R_holonomy": 0.49367237226532035,
+        "Re_semantic": 23.854227734579485,
+        "density_max": 1.020471107693598,
+        "phase_variance": 3.2891217328321796
+      },
+      "desvio": {
+        "time_s": 0.1169045194450012,
+        "phi": 8.670027771974722e-06,
+        "R_holonomy": 0.22128512924517743,
+        "Re_semantic": 5.63455955052401e-05,
+        "density_max": 0.0007009886448801181,
+        "phase_variance": 0.04510481567015399
+      }
+    },
+    "turr_experiment_validated": {
+      "colunas": [
+        "narrative",
+        "seed",
+        "run_seed",
+        "phi",
+        "plv",
+        "entropy",
+        "conductivity",
+        "betti_b0",
+        "betti_b1",
+        "betti_b2"
+      ],
+      "media": {
+        "narrative": 0.5,
+        "seed": 14.5,
+        "run_seed": 2486.5,
+        "phi": 0.37950998034218864,
+        "plv": 0.7123246349242953,
+        "entropy": 7.5021532134836475,
+        "conductivity": 0.5370897413749253,
+        "betti_b0": 3.011111111111111,
+        "betti_b1": 1.4333333333333333,
+        "betti_b2": 0.0
+      },
+      "desvio": {
+        "narrative": 0.41053541362798,
+        "seed": 8.703931695865503,
+        "run_seed": 1261.1301445818483,
+        "phi": 0.23031260290216804,
+        "plv": 0.1290115328080814,
+        "entropy": 0.9214046408227164,
+        "conductivity": 0.24704032117553343,
+        "betti_b0": 1.8572327151711825,
+        "betti_b1": 1.761319729921639,
+        "betti_b2": 0.0
+      }
+    },
+    "banco_sintetico_eeg_ground_truth": {
+      "colunas": [
+        "TBR_true",
+        "PAF_true",
+        "Coer_L_true",
+        "delay_ms_true",
+        "noise_level",
+        "TBR_measured",
+        "PAF_measured",
+        "Coer_S_measured",
+        "Coer_L_measured",
+        "P_theta",
+        "P_alpha",
+        "P_gamma"
+      ],
+      "media": {
+        "TBR_true": 3.572025,
+        "PAF_true": 10.225,
+        "Coer_L_true": 0.436955,
+        "delay_ms_true": 10.75,
+        "noise_level": 0.3625,
+        "TBR_measured": 44.361525,
+        "PAF_measured": 10.09,
+        "Coer_S_measured": 0.8647399999999998,
+        "Coer_L_measured": 0.858545,
+        "P_theta": 5558.41275,
+        "P_alpha": 2536.7698250000003,
+        "P_gamma": 72.144925
+      },
+      "desvio": {
+        "TBR_true": 1.8115775396959488,
+        "PAF_true": 0.7302109421599524,
+        "Coer_L_true": 0.13521820469968351,
+        "delay_ms_true": 2.5892587069717603,
+        "noise_level": 0.09613456525408269,
+        "TBR_measured": 45.14965240958274,
+        "PAF_measured": 0.7637790230099116,
+        "Coer_S_measured": 0.03569099350738027,
+        "Coer_L_measured": 0.0365164566190372,
+        "P_theta": 6113.635945650167,
+        "P_alpha": 813.6055697769957,
+        "P_gamma": 42.393068095512405
+      }
+    },
+    "nexo3_sincronizacao_eeg": {
+      "colunas": [
+        "tempo",
+        "R_coerencia",
+        "N_campo"
+      ],
+      "media": {
+        "tempo": 15.0,
+        "R_coerencia": 0.5695252745231555,
+        "N_campo": 0.5695252745231555
+      },
+      "desvio": {
+        "tempo": 8.68193780802657,
+        "R_coerencia": 0.37749560836603335,
+        "N_campo": 0.37749560836603335
+      }
+    }
+  }
+}

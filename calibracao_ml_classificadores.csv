@@ -1,0 +1,4 @@
+Classifier,Accuracy_mean,Accuracy_std,CI_95_lower,CI_95_upper
+Logistic Regression,1.0,0.0,1.0,1.0
+Random Forest,1.0,0.0,1.0,1.0
+Gradient Boosting,1.0,0.0,1.0,1.0

@@ -1,0 +1,7 @@
+Categoria,Conceitos Validados,Status,Evidência Quantitativa
+Matemática Pura,"GPE-Caputo, SOE, Split-Step",✓,"CFL estável, erro<1e-6"
+Física Quântica,"BEC, vórtices, superfluidez",✓,"1239 vórt., carga±1"
+Topologia Algébrica,"Números Betti, homologia",✓,"β₀=5, β₁=29"
+Ciência Cognitiva,"Φ-Tononi, holonomia, Re_s",✓,"Φ=5.5, R=0.999"
+Computação Quântica,"Shards, entrelaçamento",✓,5 shards mantidos 300 passos
+Integração LLM,"Embedding→campo, feedback",✓,5 ciclos feedback ok

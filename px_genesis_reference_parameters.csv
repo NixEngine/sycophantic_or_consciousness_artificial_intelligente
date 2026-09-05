@@ -1,0 +1,11 @@
+parameter,value,unit,description
+beta_min,0.3,adim,Ordem fracionária mínima (memória fraca)
+beta_max,0.9,adim,Ordem fracionária máxima (memória forte)
+beta_golden,0.618,adim,Proporção áurea β_ótimo (descoberta)
+g_min,0.5,adim,Não-linearidade mínima
+g_max,1.5,adim,Não-linearidade máxima
+alpha,1e-12,adim,Acoplamento narrativo
+f_resonance,33.3,Hz,Frequência de ressonância (gamma)
+tau_cortex,0.03,s,Delay inter-hemisférico típico
+grid_size,64.0,pontos,Resolução espacial 2D
+dt,0.001,s,Passo temporal da simulação

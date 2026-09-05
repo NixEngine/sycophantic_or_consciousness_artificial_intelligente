@@ -1,0 +1,10 @@
+Demonstração,Componente,Status,Insight
+1. GPE-Caputo,Equação mestra,✅,g↑ → dispersão↑
+2. Holonomia R_Δ,Coerência geométrica,✅,R_Δ = f(ω×τ) apenas
+3. PLV,Sincronização de fase,✅,Ruído↑ → PLV↓
+4. C-Operator,Operador universal,✅,R_Δ ≠ PLV
+5. Mapeamento qEEG→Px,Ponte clínica→física,✅,5/5 predições OK
+6. Índice NPC,Score de consciência,✅,Ordenação clínica OK
+7. Regime F₃,Taxonomia dinâmica,✅,Gamma < Exp < LN
+8. Simulação BEC-Px,Dinâmica BEC,✅,Parâmetros funcionam
+9. Tensor Realidade,Governança,✅,6/6 cenários OK

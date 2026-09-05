@@ -1,0 +1,12 @@
+Parâmetro,Valor,Unidade
+HBAR,1.054571817e-34,J·s
+MASS,1e-30,kg
+ALPHA_NARRATIVE,1e-13,J/m³
+BETA_BOB,1e-12,adim
+GAMMA_PX,1e-12,adim
+G_COUPLING,0.001,adim
+CAPUTO_ALPHA,0.8,adim
+GRID_SIZE,64.0,pontos
+DX,0.05,m
+DT,0.001,s
+N_STEPS,300.0,passos

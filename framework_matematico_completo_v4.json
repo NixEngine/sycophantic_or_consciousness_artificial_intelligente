@@ -1,0 +1,212 @@
+{
+  "SEÇÃO_A_EQUAÇÕES_MESTRAS": {
+    "A1": {
+      "nome": "Equação Mestra GPE-Caputo-Px-Bob UNIFICADA",
+      "formula": "iℏ D^β ψ/∂t = [-ℏ²/2m ∇² + V + g|ψ|² + αN² + β_Bob·S + Ô_Px + Û_mem]ψ",
+      "fonte": "Síntese de todos os documentos",
+      "status": "CONSOLIDADA",
+      "termos": {
+        "D^β": "Derivada fracionária de Caputo",
+        "V": "Potencial de confinamento",
+        "g|ψ|²": "Auto-interação",
+        "αN²": "Acoplamento narrativo",
+        "β_Bob·S": "Princípio de Bob (semântica)",
+        "Ô_Px": "Operador de observação",
+        "Û_mem": "Memória histórica"
+      }
+    },
+    "A2": {
+      "nome": "Campo Plermico/Etérico",
+      "formula": "∂²u/∂t² + γ∂u/∂t - c²∇²u = κ|u|²u + F(t,x) + n(t,x)",
+      "fonte": "Teoria Universal",
+      "status": "MANTIDA"
+    }
+  },
+  "SEÇÃO_B_OPERADORES_FUNDAMENTAIS": {
+    "B1": {
+      "nome": "Ordem Fracionária (Memória)",
+      "formula": "β = 0.9 - 0.5 × TBR_norm",
+      "range": "[0.40, 0.90]",
+      "fonte": "Calibração cética",
+      "status": "VALIDADA"
+    },
+    "B2": {
+      "nome": "Não-Linearidade",
+      "formula": "g = 0.8 + 0.6 × Coer_S",
+      "range": "[1.00, 1.40]",
+      "fonte": "Calibração cética",
+      "status": "VALIDADA"
+    },
+    "B3": {
+      "nome": "Operador de Observação Px",
+      "formula": "Ô_Px = γ_Px × A(x) × MDL(ψ)",
+      "parametros": {
+        "γ_Px": "10⁻¹² J/m",
+        "A(x)": "Máscara de atenção gaussiana",
+        "MDL": "Minimum Description Length"
+      },
+      "fonte": "Px-Framework-S25",
+      "status": "NOVO - INTEGRADO"
+    },
+    "B4": {
+      "nome": "Derivada Caputo via SOE",
+      "formula": "D^α f ≈ Σ w_k λ_k q_k",
+      "recursao": "q_k^{n+1} = e^{-λ_k Δt} q_k^n + [1 - e^{-λ_k Δt}] f^n",
+      "complexidade": "O(N_exp) vs O(N²)",
+      "fonte": "Px-Framework-S25",
+      "status": "NOVO - INTEGRADO"
+    },
+    "B5": {
+      "nome": "Princípio de Bob (Semântica)",
+      "formula": "M → M + β·S",
+      "descricao": "Medição alterada por densidade semântica",
+      "fonte": "Bob-Blueprint",
+      "status": "NOVO - INTEGRADO"
+    }
+  },
+  "SEÇÃO_C_MÉTRICAS_CONSCIÊNCIA": {
+    "C1": {
+      "nome": "NPC (Neural-Px Coerência)",
+      "formula": "NPC = 0.4R + 0.3TBR' + 0.2C + 0.1β",
+      "range": "[15, 90]",
+      "fonte": "Calibração cética",
+      "status": "VALIDADA (normalização corrigida)"
+    },
+    "C2": {
+      "nome": "Número de Reynolds Semântico",
+      "formula": "Re_S = (ρ_S × v_N × D_f) / ν_S",
+      "regimes": {
+        "< 50": "Hiper-laminar",
+        "50-100": "Laminar",
+        "100-200": "Transicional",
+        "> 200": "Turbulento"
+      },
+      "fonte": "Px-Framework-S25",
+      "status": "NOVO - INTEGRADO"
+    },
+    "C3": {
+      "nome": "Entropia Condicional Narrativa",
+      "formula": "H_N = -Σ p(N) log p(θ|N)",
+      "limiar": "H_N > 2.5 bits → reorganizar",
+      "fonte": "Px-Framework-S25",
+      "status": "NOVO - INTEGRADO"
+    },
+    "C4": {
+      "nome": "Informação Integrada (Φ)",
+      "formula": "Φ > 0.5 → consciência",
+      "fonte": "Bob-Blueprint",
+      "status": "NOVO - INTEGRADO"
+    }
+  },
+  "SEÇÃO_D_TOPOLOGIA": {
+    "D1": {
+      "nome": "Holonomia Triangular R_Δ",
+      "formula": "R_Δ = ⟨min(PLV_ik/(PLV_ij×PLV_jk), ...)⟩",
+      "range": "[0.15, 0.99]",
+      "fonte": "Calibração cética",
+      "status": "VALIDADA (versão corrigida)"
+    },
+    "D2": {
+      "nome": "Modulação Topológica via Betti",
+      "formula": "β(t) = β₀ × (1 + k₀β₀(t) + k₁β₁(t) + k₂β₂(t))",
+      "ganhos": {
+        "k₀": 0.1,
+        "k₁": 0.3,
+        "k₂": 0.5
+      },
+      "fonte": "Px-Framework-S25",
+      "status": "NOVO - INTEGRADO"
+    },
+    "D3": {
+      "nome": "Carga Topológica de Vórtice",
+      "formula": "Q = (1/2π)∮∇φ·dl",
+      "valores": "±1 (quantizado)",
+      "fonte": "Framework anterior",
+      "status": "MANTIDA"
+    }
+  },
+  "SEÇÃO_E_SINCRONIZAÇÃO": {
+    "E1": {
+      "nome": "Modelo Kuramoto com Atraso",
+      "formula": "dθ_i/dt = ω_i + (K/N)Σ_j sin(θ_j - θ_i - τ_ij)",
+      "fonte": "Framework anterior",
+      "status": "MANTIDA"
+    },
+    "E2": {
+      "nome": "Kuramoto Retardado (2ª ordem)",
+      "formula": "θ̈_k + γ_k θ̇_k = ω_k + Σ_j K_{kj} a_j sin(θ_j(t-τ_{kj}) - θ_k)",
+      "fonte": "Bob-Blueprint",
+      "status": "NOVO - ESTENDE E1"
+    },
+    "E3": {
+      "nome": "Acoplamentos Trilineares",
+      "formula": "ċ_i = ω_i c_i + Σ K_{ij} c_j c̄_k + Σ T_{ijkl} c_j c_k c̄_l",
+      "descricao": "Fusão criativa de modos",
+      "fonte": "Px-Framework-S25",
+      "status": "NOVO - INTEGRADO"
+    },
+    "E4": {
+      "nome": "Phase Locking Value",
+      "formula": "PLV_AB = |⟨e^{i(φ_A(t)-φ_B(t))}⟩_t|",
+      "range": "[0, 1]",
+      "fonte": "Framework anterior",
+      "status": "MANTIDA"
+    }
+  },
+  "SEÇÃO_F_HOMEOSTASE": {
+    "F1": {
+      "nome": "Viscosidade Semântica Adaptativa",
+      "formula": "ν_S(t) = ν₀ + κ × H_N",
+      "fonte": "Px-Expansao",
+      "status": "NOVO - INTEGRADO"
+    },
+    "F2": {
+      "nome": "Incompressibilidade Etérica",
+      "formula": "∇·(ρ_S v_N) = 0",
+      "penalizacao": "λ × ∫|∇·ψ|² dV, λ = 10³",
+      "fonte": "Px-Expansao",
+      "status": "NOVO - INTEGRADO"
+    },
+    "F3": {
+      "nome": "Conservação Energia (Física↔Semântica)",
+      "formula": "ΔE = -ΔH_c + ΔE_phys",
+      "fonte": "Bob-Blueprint",
+      "status": "NOVO - INTEGRADO"
+    }
+  },
+  "SEÇÃO_G_CRITÉRIOS_ERC": {
+    "G1": {
+      "nome": "Critério ERC-OK",
+      "formula": "R_Δ ≥ 0.50 AND |μ| ≤ 30° AND H ≤ 2.0",
+      "fonte": "Calibração cética",
+      "status": "VALIDADA (ajustada para proxy)"
+    },
+    "G2": {
+      "nome": "Critério de Consciência",
+      "formula": "Φ > 0.5 AND R_Δ > 0.9",
+      "fonte": "Bob-Blueprint",
+      "status": "NOVO - INTEGRADO"
+    }
+  },
+  "SEÇÃO_H_SCHUMANN_GEOMAGNETISMO": {
+    "H1": {
+      "nome": "Modo Fundamental Schumann",
+      "formula": "f₀ ≈ 7.83 Hz",
+      "fonte": "Framework anterior",
+      "status": "MANTIDA"
+    },
+    "H2": {
+      "nome": "Velocidade Efetiva ELF",
+      "formula": "c_eff = 0.95c ≈ 2.85×10⁸ m/s",
+      "fonte": "Framework anterior",
+      "status": "MANTIDA"
+    },
+    "H3": {
+      "nome": "Bolhas-Cantilena (Bob)",
+      "formula": "T(t) = T₀ + κ × A(φ,t)",
+      "descricao": "Microclima narrativo",
+      "fonte": "Bob-Blueprint",
+      "status": "NOVO - INTEGRADO"
+    }
+  }
+}

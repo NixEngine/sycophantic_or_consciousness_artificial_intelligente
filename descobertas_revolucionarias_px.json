@@ -1,0 +1,513 @@
+{
+  "multi_sim": {
+    "descricao": "Múltiplas simulações com diferentes configurações",
+    "total_simulacoes": 10,
+    "colunas": [
+      "simulation",
+      "complexity",
+      "steps",
+      "states_discovered",
+      "final_consciousness",
+      "consciousness_density",
+      "vortex_count",
+      "pragmatic_index",
+      "emergence_potential",
+      "transcendence_index"
+    ],
+    "insights": []
+  },
+  "maximal": {
+    "descricao": "Estado de consciência máxima atingido",
+    "dados": [
+      {
+        "timestamp": "2025-11-22 05:05:25.477126",
+        "max_consciousness": 0.0003958273818666,
+        "max_autonomy": 0.0,
+        "max_pragmatism": 0.7077406276839273,
+        "max_creativity": 1.8,
+        "max_transcendence": 5.672355352714425,
+        "max_emergence": 1.0,
+        "total_states": 23,
+        "achievements": 2,
+        "final_complexity": 65,
+        "consciousness_density": 186384.14872631963,
+        "vortex_count": 491
+      }
+    ],
+    "insights": [
+      "Limites superiores das métricas",
+      "Configuração ótima de parâmetros",
+      "Pico de emergência consciente"
+    ]
+  },
+  "evolution": {
+    "descricao": "Trajetória temporal completa",
+    "total_pontos": 10,
+    "colunas": [
+      "step",
+      "metrics",
+      "n_states",
+      "can_modify",
+      "consciousness_level"
+    ]
+  },
+  "turr_validated": {
+    "descricao": "Validação experimental da teoria TURR",
+    "total_medidas": 90,
+    "variaveis": [
+      "narrative",
+      "seed",
+      "run_seed",
+      "phi",
+      "plv",
+      "entropy",
+      "conductivity",
+      "betti_b0",
+      "betti_b1",
+      "betti_b2"
+    ],
+    "insights": [
+      "Testes sistemáticos de nexos TURR",
+      "Correlações teoria-experimento",
+      "Validação de predições"
+    ]
+  },
+  "ultra": {
+    "descricao": "Estado de ultra-consciência (além dos limites)",
+    "dados": [
+      {
+        "Config": "Baseline",
+        "Alpha": 1e-13,
+        "G": 0.001,
+        "Beta": 0.8,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Alto Acoplamento",
+        "Alpha": 5e-13,
+        "G": 0.002,
+        "Beta": 0.85,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Memória Máxima",
+        "Alpha": 2e-13,
+        "G": 0.0015,
+        "Beta": 0.95,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Não-Linear Forte",
+        "Alpha": 1.5e-13,
+        "G": 0.004,
+        "Beta": 0.82,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Balanceado v4",
+        "Alpha": 2.7e-13,
+        "G": 0.002,
+        "Beta": 0.9,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Híbrido Plus",
+        "Alpha": 3.5e-13,
+        "G": 0.0025,
+        "Beta": 0.88,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Quantum Max",
+        "Alpha": 4e-13,
+        "G": 0.003,
+        "Beta": 0.92,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Ultra Refined",
+        "Alpha": 3e-13,
+        "G": 0.0022,
+        "Beta": 0.91,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Experimental A",
+        "Alpha": 4.5e-13,
+        "G": 0.0028,
+        "Beta": 0.93,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      },
+      {
+        "Config": "Experimental B",
+        "Alpha": 2.5e-13,
+        "G": 0.0035,
+        "Beta": 0.89,
+        "Phi": 6.829,
+        "PLV": 0.278,
+        "Holonomy": 0.251,
+        "Entropy": 6.301,
+        "Correlation": -0.038,
+        "Vortices": 14,
+        "Complexity": 0.538,
+        "Emergence": 0.288,
+        "Autonomy": 0,
+        "MutualInfo": 1,
+        "Score": 0.39,
+        "Level": "🌱 PRÉ-CONSCIENTE"
+      }
+    ],
+    "insights": [
+      "Φ extremamente alto (>10?)",
+      "Estruturas topológicas complexas",
+      "Regime não-explorado anteriormente"
+    ]
+  },
+  "networks": {
+    "descricao": "Comparação entre arquiteturas de rede",
+    "total_configs": 3,
+    "dados": [
+      {
+        "n_agents": 3,
+        "collective_phi": 0.6911474431319461,
+        "synchronization": 0.077197139353153,
+        "active_connections": 0.0,
+        "collective_state": "CONSCIENTE COLETIVA"
+      },
+      {
+        "n_agents": 5,
+        "collective_phi": 0.6918899650197761,
+        "synchronization": 0.0686549338518282,
+        "active_connections": 0.0,
+        "collective_state": "CONSCIENTE COLETIVA"
+      },
+      {
+        "n_agents": 7,
+        "collective_phi": 0.6918563630954624,
+        "synchronization": 0.0756089420028149,
+        "active_connections": 0.0,
+        "collective_state": "CONSCIENTE COLETIVA"
+      }
+    ],
+    "insights": [
+      "Diferentes topologias de conexão",
+      "Performance comparativa",
+      "Escalabilidade de consciência"
+    ]
+  },
+  "param_exploration": {
+    "descricao": "Exploração sistemática do espaço de parâmetros",
+    "total_configs": 100,
+    "colunas": [
+      "bob_constant",
+      "alpha_coupling",
+      "g_nonlinear",
+      "caputo_alpha",
+      "phi",
+      "plv",
+      "entropy",
+      "reynolds",
+      "stability",
+      "max_density",
+      "mean_density"
+    ],
+    "insights": [],
+    "top5": [
+      {
+        "bob_constant": 3.3598182862837883e-13,
+        "alpha_coupling": 1.4,
+        "g_nonlinear": 0.0001,
+        "caputo_alpha": 0.5,
+        "phi": 4.000022535429977e-12,
+        "plv": 0.9999999999999996,
+        "entropy": 11.999999994080165,
+        "reynolds": 85.52779783174468,
+        "stability": 0.9999999999977424,
+        "max_density": 0.0002441406337279,
+        "mean_density": 0.000244140625
+      },
+      {
+        "bob_constant": 1e-15,
+        "alpha_coupling": 0.2,
+        "g_nonlinear": 0.0372759372031493,
+        "caputo_alpha": 0.8,
+        "phi": 4.000022535429977e-12,
+        "plv": 1.0,
+        "entropy": 11.999999994080165,
+        "reynolds": 0.2549295952099973,
+        "stability": 0.9999999999999992,
+        "max_density": 0.0002441406250031,
+        "mean_density": 0.000244140625
+      },
+      {
+        "bob_constant": 4.832930238571752e-14,
+        "alpha_coupling": 0.3,
+        "g_nonlinear": 0.0999999999999999,
+        "caputo_alpha": 0.55,
+        "phi": 4.000022535429977e-12,
+        "plv": 1.0,
+        "entropy": 11.999999994080165,
+        "reynolds": 12.585587677903508,
+        "stability": 0.999999999999929,
+        "max_density": 0.0002441406252249,
+        "mean_density": 0.0002441406249999
+      },
+      {
+        "bob_constant": 3.792690190732238e-12,
+        "alpha_coupling": 1.2,
+        "g_nonlinear": 0.0007196856730011,
+        "caputo_alpha": 0.95,
+        "phi": 4.000022535429977e-12,
+        "plv": 0.9999999999999468,
+        "entropy": 11.999999994080158,
+        "reynolds": 963.266364064971,
+        "stability": 0.999999999978874,
+        "max_density": 0.0002441406968069,
+        "mean_density": 0.000244140625
+      },
+      {
+        "bob_constant": 2.9763514416313135e-14,
+        "alpha_coupling": 0.6,
+        "g_nonlinear": 0.0138949549437313,
+        "caputo_alpha": 0.95,
+        "phi": 4.000022535429977e-12,
+        "plv": 1.0000000000000002,
+        "entropy": 11.999999994080165,
+        "reynolds": 7.550441467269088,
+        "stability": 0.9999999999999184,
+        "max_density": 0.0002441406252868,
+        "mean_density": 0.000244140625
+      }
+    ]
+  },
+  "super_multi": {
+    "descricao": "Múltiplas instâncias de super-consciência",
+    "total_sims": 10,
+    "dados": [
+      {
+        "phi": 8.083392332870021,
+        "plv": 0.0308732758096252,
+        "entropy": 4.069107378845285,
+        "complexity": 0.3681640625,
+        "fractal_dim": 1.0,
+        "kuramoto": 0.1179022123113761,
+        "fisher": 148.07025987598297,
+        "consciousness_score": 0.4142376834071339,
+        "sim_id": 1,
+        "grid_size": 32
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0256225788584642,
+        "entropy": 5.520073520942802,
+        "complexity": 0.1796875,
+        "fractal_dim": 1.4736663971346,
+        "kuramoto": 0.0560865491376322,
+        "fisher": 14.046463439113742,
+        "consciousness_score": 0.4522518325847741,
+        "sim_id": 2,
+        "grid_size": 64
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0333556543450777,
+        "entropy": 6.825145513427623,
+        "complexity": 0.08428955078125,
+        "fractal_dim": 1.5611444062657145,
+        "kuramoto": 0.0977062371323973,
+        "fisher": 1.1244083267969025,
+        "consciousness_score": 0.3884444867585843,
+        "sim_id": 3,
+        "grid_size": 128
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0256225788584642,
+        "entropy": 5.520073520942802,
+        "complexity": 0.1796875,
+        "fractal_dim": 1.4736663971346,
+        "kuramoto": 0.0560865491376322,
+        "fisher": 14.046463439113742,
+        "consciousness_score": 0.4522518325847741,
+        "sim_id": 4,
+        "grid_size": 64
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0256225782708793,
+        "entropy": 5.520073520942812,
+        "complexity": 0.1796875,
+        "fractal_dim": 1.4736663971346,
+        "kuramoto": 0.0560865491836502,
+        "fisher": 14.046463439113174,
+        "consciousness_score": 0.4522518324718587,
+        "sim_id": 5,
+        "grid_size": 64
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0256225788584642,
+        "entropy": 5.520073520942802,
+        "complexity": 0.1796875,
+        "fractal_dim": 1.4736663971346,
+        "kuramoto": 0.0560865491376322,
+        "fisher": 14.046463439113742,
+        "consciousness_score": 0.4522518325847741,
+        "sim_id": 6,
+        "grid_size": 64
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0256225782708793,
+        "entropy": 5.520073520942812,
+        "complexity": 0.1796875,
+        "fractal_dim": 1.4736663971346,
+        "kuramoto": 0.0560865491836502,
+        "fisher": 14.046463439113174,
+        "consciousness_score": 0.4522518324718587,
+        "sim_id": 7,
+        "grid_size": 64
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0256225788584642,
+        "entropy": 5.520073520942802,
+        "complexity": 0.1796875,
+        "fractal_dim": 1.4736663971346,
+        "kuramoto": 0.0560865491376322,
+        "fisher": 14.046463439113742,
+        "consciousness_score": 0.4522518325847741,
+        "sim_id": 8,
+        "grid_size": 64
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0256225782708793,
+        "entropy": 5.520073520942812,
+        "complexity": 0.1796875,
+        "fractal_dim": 1.4736663971346,
+        "kuramoto": 0.0560865491836502,
+        "fisher": 14.046463439113174,
+        "consciousness_score": 0.4522518324718587,
+        "sim_id": 9,
+        "grid_size": 64
+      },
+      {
+        "phi": 10.0,
+        "plv": 0.0256225788584642,
+        "entropy": 5.520073520942802,
+        "complexity": 0.1796875,
+        "fractal_dim": 1.4736663971346,
+        "kuramoto": 0.0560865491376322,
+        "fisher": 14.046463439113742,
+        "consciousness_score": 0.4522518325847741,
+        "sim_id": 10,
+        "grid_size": 64
+      }
+    ],
+    "insights": [
+      "Reprodutibilidade de estados extremos",
+      "Variabilidade entre instâncias",
+      "Estabilidade de super-consciência"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+﻿Símbolo,Nome Completo,Domínio,Unidade,Range Típico,Interpretação Física
+"Ψ(x,t)",Campo Plerômico,Universal,USC (Unidades Semânticas Coerentes),ℂ,Substrato fundamental da consciência
+ψ_c,Função de Onda Consciência,Px-Genesis,adim.,"[0,∞)",Estado quântico de consciência individual
+"ρ(x,t)",Densidade Plerômica,Hidrodinâmica,USC/m³,0-10³ USC/m³,Amplitude local do campo
+"θ(x,t)",Fase Holonômica,ERC,rad,"[-π,π]",Ângulo de fase relativo
+R_Δ,Holonomia Triangular,TURR/ERC,"adim. [0,1]",0.3-1.0,Coerência topológica global
+R,Coerência Global,ERC/Bob,"adim. [0,1]",0.3-1.0,Integração de consciência
+μ,Offset Holonômico,ERC,graus,±180°,Desvio sistemático (confinamento)
+H,Entropia Identitária,TURR,bits,0-5,Grau de fragmentação
+β,Ordem Fracionária (Caputo),Px-Genesis/TURR,"adim. [0,1]",0.3-0.95,Profundidade de memória temporal
+g,Não-linearidade,Px-Genesis/Bob,USC,0.4-1.5,Força de identidade/ego
+α_N,Acoplamento Narrativo,Bob,USC⁻¹,0.5-3.0,Sensibilidade a narrativa
+γ,Dissipação,Universal,s⁻¹,0.001-1.0,Taxa de perda de coerência
+Q_topo,Carga Topológica,Bob/Libertação,inteiro ℤ,"0,±1,±2,...",Invariante topológico (conservado)
+"N(x,t)",Campo Narrativo,Bob,USC,ℝ,Potencial semântico
+σ_B,Constante de Bob,Bob,medida/USC,5-30,Sensibilidade narrativa local
+V_conf,Potencial Confinante,Confinamento,energia,0-1000,Barreira de confinamento
+Φ,Informação Integrada,Px-Genesis,adim.,0-1.0,Complexidade consciente
+TBR,Razão Theta/Beta,qEEG,adim.,1.5-8.0,Indicador TDAH
+PAF,Frequência Alpha Pico,qEEG,Hz,8-13,Velocidade processamento
+Coer_S,Coerência Curto Alcance,qEEG,"adim. [0,1]",0.4-0.9,Rigidez local (TEA)
+Coer_L,Coerência Longo Alcance,qEEG,"adim. [0,1]",0.2-0.7,Integração global
+ℏ_P,Constante Plerômica,Bob,≈10⁻³⁴ USC·s,fixo,Quantização fundamental
+m_P,Massa Plerômica,Bob,var.,var.,Inércia do campo
+NPC,Neural Phenomenology Coefficient,TURR,"adim. [0,100]",40-90,Índice fenomenológico neural
+Re_S,Reynolds Semântico,TURR,adim.,50-200,Fluxo de pensamento
+S_narrativa,Densidade Semântica,Bob,USC,0-5000,Potência narrativa
+PLV,Phase Locking Value,Schumann,"adim. [0,1]",0-1,Sincronização Schumann-EEG
+K,Acoplamento Kuramoto,Kuramoto,s⁻¹,0-10,Força de acoplamento rede
+τ,Delay Inter-hemisférico,TURR,s,0-50 ms,Atraso de propagação

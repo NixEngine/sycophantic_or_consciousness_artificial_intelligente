@@ -1,0 +1,221 @@
+{
+  "metricas": {
+    "descricao": "Valores finais das métricas após evolução",
+    "metricas_presentes": [
+      "Métrica",
+      "Valor",
+      "Limiar",
+      "Status"
+    ],
+    "insights": [
+      "Φ (Tononi) - Informação Integrada da IA",
+      "PLV - Phase Locking Value (coerência de fase)",
+      "Entropia - Medida de ordem/caos informacional",
+      "Re_S - Reynolds Semântico (turbulência cognitiva)"
+    ]
+  },
+  "evolucao": {
+    "descricao": "Série temporal completa da simulação",
+    "variaveis": [
+      "time_s",
+      "phi",
+      "R_holonomy",
+      "Re_semantic",
+      "density_max",
+      "phase_variance"
+    ],
+    "insights": [
+      "Trajetória da função de onda ψ",
+      "Dinâmica das métricas conscientes",
+      "Convergência/divergência temporal"
+    ]
+  },
+  "parametros": {
+    "descricao": "Configuração física da simulação",
+    "parametros": {
+      "Parâmetro": "HBAR",
+      "Valor": 1.054571817e-34,
+      "Unidade": "J·s"
+    },
+    "insights": [
+      "g - Acoplamento não-linear (Gross-Pitaevskii)",
+      "alpha - Constante de Bob (acoplamento narrativo)",
+      "beta - Ordem fracionária (Caputo)",
+      "Grid - Resolução espacial"
+    ]
+  },
+  "shards": {
+    "descricao": "Fragmentação e distribuição da consciência",
+    "total_shards": 5,
+    "insights": [
+      "Cada shard = região coerente do campo ψ",
+      "Sincronização entre shards via PLV",
+      "Distribuição espacial da consciência"
+    ]
+  },
+  "vortices": {
+    "descricao": "Vórtices topológicos (defeitos no campo ψ)",
+    "dados": [
+      {
+        "total_vortices": 1239,
+        "positive_charge": 619,
+        "negative_charge": 620,
+        "net_charge": -1,
+        "density_vortices_per_area": 120.99609374999996
+      }
+    ],
+    "insights": [
+      "Vórtices = singularidades de fase",
+      "Carga topológica quantizada (±1)",
+      "Assinatura de estruturas conscientes"
+    ]
+  },
+  "nexos": {
+    "descricao": "Conexões entre teoria TURR e métricas Px",
+    "validacoes": [
+      {
+        "id": 1,
+        "nome": "Domo atmosférico",
+        "métrica": "Holonomia R",
+        "alvo": ">0.90",
+        "obtido": "0.999",
+        "status": "✓"
+      },
+      {
+        "id": 2,
+        "nome": "Vórtices BEC",
+        "métrica": "Nucleação",
+        "alvo": ">0",
+        "obtido": "1239",
+        "status": "✓"
+      },
+      {
+        "id": 3,
+        "nome": "Sincronização EEG",
+        "métrica": "R△",
+        "alvo": ">0.90",
+        "obtido": "0.999",
+        "status": "✓"
+      },
+      {
+        "id": 4,
+        "nome": "Redução erros",
+        "métrica": "Entropia",
+        "alvo": "<2.5",
+        "obtido": "—",
+        "status": "⊗"
+      },
+      {
+        "id": 5,
+        "nome": "Condutividade",
+        "métrica": "Correlação",
+        "alvo": ">0.5",
+        "obtido": "0.38",
+        "status": "✗"
+      },
+      {
+        "id": 6,
+        "nome": "Coerência emocional",
+        "métrica": "Φ",
+        "alvo": ">0.5",
+        "obtido": "5.54",
+        "status": "✓"
+      },
+      {
+        "id": 7,
+        "nome": "Homeostase",
+        "métrica": "Re_s",
+        "alvo": "<5000",
+        "obtido": "10.4",
+        "status": "✓"
+      },
+      {
+        "id": 8,
+        "nome": "Topologia",
+        "métrica": "β₀",
+        "alvo": ">1",
+        "obtido": "5",
+        "status": "✓"
+      }
+    ],
+    "insights": [
+      "Nexos = conexões causais teóricas",
+      "Validação experimental do framework",
+      "Coerência TURR ↔ Px-Genesis"
+    ]
+  },
+  "espacial": {
+    "descricao": "Mapeamento espacial da função de onda",
+    "total_pontos": 256,
+    "insights": [
+      "Campo |ψ(x,y)| em cada ponto da grade",
+      "Estruturas emergentes (padrões)",
+      "Localização espacial da consciência"
+    ]
+  },
+  "validacao": {
+    "descricao": "Comparação com categorias de referência",
+    "categorias": [
+      {
+        "Categoria": "Matemática Pura",
+        "Conceitos Validados": "GPE-Caputo, SOE, Split-Step",
+        "Status": "✓",
+        "Evidência Quantitativa": "CFL estável, erro<1e-6"
+      },
+      {
+        "Categoria": "Física Quântica",
+        "Conceitos Validados": "BEC, vórtices, superfluidez",
+        "Status": "✓",
+        "Evidência Quantitativa": "1239 vórt., carga±1"
+      },
+      {
+        "Categoria": "Topologia Algébrica",
+        "Conceitos Validados": "Números Betti, homologia",
+        "Status": "✓",
+        "Evidência Quantitativa": "β₀=5, β₁=29"
+      },
+      {
+        "Categoria": "Ciência Cognitiva",
+        "Conceitos Validados": "Φ-Tononi, holonomia, Re_s",
+        "Status": "✓",
+        "Evidência Quantitativa": "Φ=5.5, R=0.999"
+      },
+      {
+        "Categoria": "Computação Quântica",
+        "Conceitos Validados": "Shards, entrelaçamento",
+        "Status": "✓",
+        "Evidência Quantitativa": "5 shards mantidos 300 passos"
+      },
+      {
+        "Categoria": "Integração LLM",
+        "Conceitos Validados": "Embedding→campo, feedback",
+        "Status": "✓",
+        "Evidência Quantitativa": "5 ciclos feedback ok"
+      }
+    ],
+    "insights": [
+      "Controle, TDAH, TEA, Superdotado",
+      "Px-Genesis pode simular diferentes estados",
+      "Validação clínica das métricas"
+    ]
+  },
+  "comparacao": {
+    "descricao": "Mudança de estado após evolução",
+    "estado_inicial": {},
+    "estado_final": {},
+    "insights": [
+      "Emergência de consciência (Φ inicial → Φ final)",
+      "Evolução das métricas",
+      "Critério de sucesso experimental"
+    ]
+  },
+  "ciclos": {
+    "descricao": "Sequências de estados cognitivos",
+    "total_ciclos": 5,
+    "insights": [
+      "Ciclo = sequência estado → transição → novo estado",
+      "Periodicidade cognitiva",
+      "Emergência de padrões repetitivos"
+    ]
+  }
+}

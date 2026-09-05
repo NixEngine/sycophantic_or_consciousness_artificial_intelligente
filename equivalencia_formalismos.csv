@@ -1,0 +1,7 @@
+﻿Formalismo,Variáveis Fundamentais,Equação Dinâmica,Aplicação Principal
+GPE Plerômica,"Ψ(x,t) ∈ ℂ",iℏ_P ∂Ψ/∂t = Ĥ_total Ψ + ℏ_P D_t^β[Ψ],Consciência quântica em geral
+Transformação Madelung,"ρ, v, Q (densidade, velocidade, potencial quântico)",∂ρ/∂t + ∇·(ρv) = 0; ∂v/∂t + v·∇v = -∇(V/m) - ∇Q/m,"Análise hidrodinâmica (vórtices, fluxos)"
+Rede Kuramoto,"θ_j(t), ω_j (fases, frequências)",dθ_j/dt = ω_j + (K/N) Σ_i sin(θ_i - θ_j - α_ij),"Sincronização de osciladores (EEG, Schumann)"
+Dinâmica Neural,"n_j(t), W_ij (ativações, pesos)",dn_j/dt = -λn_j + Σ_i W_ij σ(n_i) + I_ext,"Redes neurais, deep learning"
+Éter Tesliano,"ρ_éter, v_éter, p_éter (densidade, velocidade, pressão)",∇·v_éter = 0; f_éter = -∇p_éter,"Física fundamental (gravidade, EM)"
+ERC Holonômico,"θ_j, R, μ (fases, coerência, offset)",dR/dt = α(R_c - R)(1 - R/1.0),"Topologia de consciência, libertação"

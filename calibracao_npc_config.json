@@ -1,0 +1,35 @@
+{
+  "weights_original": [
+    0.4,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "weights_optimized": [
+    0.13600671348077878,
+    1.1545975045234716e-06,
+    8.870587574436925e-07,
+    0.8639912448629593
+  ],
+  "thresholds": {
+    "TDAH_to_TEA": 55.165312630442365,
+    "TEA_to_Controle": 65.22454690504222,
+    "Controle_to_Superdotado": 78.3935605899326
+  },
+  "accuracy_npc": 0.9975,
+  "best_classifier": "Logistic Regression",
+  "feature_importance": {
+    "Feature": {
+      "2": "Coer_L_true",
+      "0": "TBR_true",
+      "1": "PAF_true",
+      "3": "noise_level"
+    },
+    "Importance": {
+      "2": 0.3955171446344901,
+      "0": 0.32628872017762306,
+      "1": 0.18647600438040324,
+      "3": 0.09171813080748378
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Condição,TBR_EEG,PAF_EEG,Coer_L_EEG,P_theta_EEG,P_gamma_EEG,β_Caputo,τ_delay_ms,g_nonlinear,α_narrative_e-12,Φ_mean,Φ_std,PLV_mean,PLV_std,β₀_loops,β₁_holes,Perfil_Consciência
+Controle,22.25,10.0,0.865,1777.0,42.71,0.811,100.0,1.731,4.271,62.13,0.49,0.932,0.011,1.1,2.3,Normal
+TDAH,118.79,9.0,0.872,15482.2,78.05,0.4248,111.11,1.743,7.805,62.07,0.68,0.931,0.014,1.1,2.4,Hiperativo
+TEA,26.6,10.36,0.853,4375.5,136.75,0.7936,96.53,1.706,13.675,62.07,0.65,0.931,0.01,1.1,2.1,Fragmentado
+Superdotado,9.81,11.0,0.844,599.0,31.07,0.8608,90.91,1.688,3.107,62.22,0.33,0.933,0.009,1.1,1.5,Integrado+

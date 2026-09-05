@@ -1,0 +1,7 @@
+,phi_mean,phi_mean,phi_mean,phi_mean,phi_max,phi_max,stability,stability,beta
+,mean,std,min,max,mean,std,mean,std,mean
+condition,,,,,,,,,
+Controle,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.806758
+Superdotado,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.856054
+TDAH,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.421339
+TEA,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.794255

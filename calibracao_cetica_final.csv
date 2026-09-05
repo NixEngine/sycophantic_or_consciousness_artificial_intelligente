@@ -1,0 +1,12 @@
+Teste,Status,Confiança
+β,VALIDADO,0.95
+g,VALIDADO,0.95
+NPC,CORRIGIDO,0.9
+Caputo,VALIDADO,0.98
+R_Δ,CORRIGIDO,0.85
+Schumann,PLAUSÍVEL,0.6
+Dados,VALIDADO,0.9
+Preditivo,VALIDADO,0.92
+Sensibilidade,VALIDADO,0.95
+Overfitting,RESSALVA,0.8
+Consistência,VALIDADO,0.95

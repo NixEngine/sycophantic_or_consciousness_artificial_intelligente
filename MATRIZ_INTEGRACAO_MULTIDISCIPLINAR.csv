@@ -1,0 +1,21 @@
+Dominio_A,Dominio_B,Mecanismo_Integracao,Equacao_Metrica,Evidencia_Empirica,Força_Conexao
+EEG (Ondas),Neuroanatomia (Tálamo),Tálamo gera oscilações alpha (8-13Hz) via loops tálamo-corticais,α_power = Σ(V_i² × N_thalamus) / τ_loop,EEG.pdf: PLV=0.75 durante sincronização talâmica,0.95
+EEG (Theta),Anatomia (Hipocampo),"Hipocampo direito oscila 4-8Hz, acopla com Schumann 7.83Hz",PLV_hippocampus = |⟨exp(i(φ_EEG - φ_Schumann))⟩|,"Pobachenko 2006: PLV=0.75 em eventos, 0.45 baseline",0.88
+fMRI (BOLD),Neurofisiologia (Fluxo sanguíneo),Atividade neural → ↑ metabolismo → ↑ fluxo sangue → ↑ oxigenação,BOLD(t) = α·∫[ΔCBFᵗ - ΔCMROₓᵗ]dt,7T fMRI Jhāna: ↑ tálamo-cortex durante J1-J4,0.92
+Psiquiatria (TDAH),EEG (TBR),"Déficit dopamina → ↑ theta (lentidão), ↓ beta (hipoativação frontal)",TBR = P_theta(4-8Hz) / P_beta(13-30Hz),"PMC4973024: TDAH TBR=118.79, Controle=22.25",0.91
+Psiquiatria (TEA),Topologia (β₁),Conectividade fragmentada → mais 'buracos' topológicos,β₁ = #ciclos_independentes no grafo de coerência,"TURR: TEA β₁=2.1, Superdotado β₁=1.5",0.79
+Campo Geomagnético (Kp),EEG (Alpha ERD),Kp>4 → perturbação magnetita → despolarização neuronal → ↓25% alpha,α_amplitude = α₀ × (1 - 0.25·H(Kp-4)),Wang 2019 (Caltech): ERD latência 35-45ms,0.73
+Ressonância Schumann,Psicologia (Estados Alterados),Schumann ↑ → PLV ↑ → Φ ↑ → estado alterado consciência,P(altered) = σ(w₁·PLV + w₂·Φ + w₃·Kp),Consciousness-Environment: 33.7% tempo em estado alterado,0.68
+Psicanálise (Inconsciente),Neuroanatomia (DMN),Default Mode Network ativo em repouso = processamento auto-referencial,DMN_activity ∝ alpha_power × PCC_connectivity,Psicodélicos → ↓ DMN → ↓ ego → expansão consciência,0.81
+fMRI (Jhāna),Psicologia (Meditação),"Estado concentrativo → ↓ DMN, ↑ tálamo-sensorial",Jhāna_depth = -β_DMN + γ_thalamus,7T fMRI: State_2 (DMN-anti) ↑58% em J5-J8,0.86
+Magnetita Cerebral,Campos EM (Maxwell),Fe₃O₄ cristais single-domain → torque sob B → força mecânica em canais,τ = m×B = V·Ms·sin(θ)·B,"Abelhas: Ms=8.3×10⁻⁸ emu/g, Hc=102 Oe",0.77
+Neurotransmissores (5-HT),Campo Geomagnético,Kp ↑ → melatonina ↓ → serotonina ↓ → humor ↓,5-HT(t) = 5-HT₀·exp(-k·Kp(t-6h)),"Cherry 2002: r(Schumann, Kp)=0.92",0.64
+Topologia (Φ),Psiquiatria (Anestesia),Propofol → perda conectividade → Φ<0.5 → inconsciência,Φ = H(X) - Σ H(X_i) + I_mutual,"TMS-EEG: Φ_awake=1.2, Φ_anesthesia=0.3",0.94
+EEG (Gamma 40Hz),Neurofisiologia (NMDA),Receptores NMDA → oscilações gamma → binding perceptual,γ_power ∝ [NMDA]·G_synapse,Esquizofrenia: ↓ NMDA → ↓ gamma,0.83
+Teoria Ondas (DACM),EEG (Todas bandas),Modulação cíclica amplifica micro-instabilidades → detecta acoplamentos,x_DACM = α₂∇[α₁∇x·cos(ωt+Δf·t²)]·cos(ωt),DACM: SNR +24% vs HHT,0.89
+Anatomia (Amígdala),Psicologia (Emoção),Amígdala processa ameaça → norepinefrina → arousal,Arousal = β·Amygdala_activity + ε,"fMRI: amígdala ↑ em fobia, PTSD",0.91
+Campo Quântico (Ψ),EEG (Densidade probabilística),|Ψ|² = densidade de 'consciência' → EEG = medida macroscópica,"⟨EEG⟩ = ∫∫ |Ψ(x,y,t)|² dx dy",TURR: Φ simulado correlaciona com Φ EEG real,0.71
+Holonomia (R_Δ),Delays Inter-hemisféricos,τ_delays → frequência natural f=1/Στ → ressonância,R_Δ = ∮ A·dl = 2π·Φ_enclosed / Φ₀,"TURR: Superdotado τ=91ms, TDAH τ=111ms",0.76
+fMRI (Connectivity),Topologia (Betti),"Matriz conectividade funcional → grafo → β₀, β₁","β₀ = #componentes, β₁ = #loops",Psicodélicos: reorganização → ↑ β₁,0.82
+Psicologia (Atenção),EEG (P300),Estímulo raro → ativação parietal → P300 (300ms),P300_amplitude ∝ salience × attention,TDAH: ↓ P300 amplitude,0.87
+Neurologia (AVC),fMRI (Lesão),Lesão estrutural → perda funcional → reorganização rede,Recovery ∝ Plasticity_potential × Time,fMRI: compensação hemisfério contralateral,0.85

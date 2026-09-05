@@ -1,0 +1,215 @@
+{
+  "EIXO_1_QUANTICO": {
+    "nome": "Campo Quântico Base Ψ(x,y,t)",
+    "dimensoes": [
+      "Amplitude",
+      "Fase",
+      "Coerência"
+    ],
+    "metricas": [
+      "||Ψ||²",
+      "∇·Ψ",
+      "Entropia(Ψ)"
+    ],
+    "papel": "Substrato fundamental da realidade consciente"
+  },
+  "EIXO_2_ELETROMAGNETICO": {
+    "nome": "Ondas EM Biológicas e Ambientais",
+    "subdimensoes": {
+      "EEG": [
+        "δ",
+        "θ",
+        "α",
+        "β",
+        "γ"
+      ],
+      "Schumann": [
+        "7.83Hz",
+        "14.3Hz",
+        "20.8Hz"
+      ],
+      "Geomag": [
+        "Kp",
+        "Dst",
+        "Bz"
+      ],
+      "Local": [
+        "E-field",
+        "B-field",
+        "Impedância"
+      ]
+    },
+    "metricas": [
+      "PLV",
+      "Coerência",
+      "Potência espectral"
+    ],
+    "papel": "Interface entre ambiente e neurobiologia"
+  },
+  "EIXO_3_NEUROQUIMICO": {
+    "nome": "Neurotransmissores e Neuromoduladores",
+    "moleculas": {
+      "Dopamina": "Recompensa, motivação, TDAH",
+      "Serotonina": "Humor, sono, psicodélicos",
+      "GABA": "Inibição, ansiedade",
+      "Glutamato": "Excitação, plasticidade",
+      "Norepinefrina": "Arousal, atenção",
+      "Acetilcolina": "Memória, sono REM"
+    },
+    "metricas": [
+      "Concentração",
+      "Taxa liberação",
+      "Turnover"
+    ],
+    "papel": "Modulação química da consciência"
+  },
+  "EIXO_4_NEUROANATOMICO": {
+    "nome": "Estruturas e Redes Cerebrais",
+    "regioes": [
+      "Córtex prefrontal",
+      "Tálamo",
+      "Hipocampo",
+      "Amígdala",
+      "Tronco encefálico",
+      "DMN",
+      "SN",
+      "CEN"
+    ],
+    "metricas": [
+      "Volume",
+      "Densidade neuronal",
+      "Mielinização",
+      "Conectividade"
+    ],
+    "papel": "Arquitetura física da consciência"
+  },
+  "EIXO_5_FUNCIONAL_fMRI": {
+    "nome": "Metabolismo e Fluxo Sanguíneo",
+    "sinal": "BOLD (Blood Oxygen Level Dependent)",
+    "metricas": [
+      "Ativação regional",
+      "Conectividade funcional",
+      "Dinâmica temporal"
+    ],
+    "estados": {
+      "Repouso": "DMN dominante",
+      "Tarefa": "Task-positive networks",
+      "Meditação": "↑ tálamo, ↓ DMN",
+      "Psicodélico": "Desorganização global"
+    },
+    "papel": "Mapa metabólico dinâmico"
+  },
+  "EIXO_6_TOPOLOGICO": {
+    "nome": "Estrutura Topológica (TURR)",
+    "metricas": {
+      "Φ": "Informação integrada",
+      "β₀": "Componentes conectados",
+      "β₁": "Loops/holes",
+      "PLV": "Sincronização de fase",
+      "Entropia": "Diversidade de estados"
+    },
+    "interpretacao": {
+      "Alto_Phi": "Consciência rica",
+      "Baixo_Beta1": "Integração superior",
+      "Alto_PLV": "Sincronização"
+    },
+    "papel": "Geometria da consciência"
+  },
+  "EIXO_7_TEMPORAL": {
+    "nome": "Dinâmica Temporal e Memória",
+    "escalas": {
+      "Ultrarrápida": "1-10ms (potenciais ação)",
+      "Rapida": "10-100ms (processamento sensorial)",
+      "Intermediaria": "100ms-1s (consciência)",
+      "Lenta": "1s-1h (emoção, atenção)",
+      "Ultralenta": "1h-dias (humor, circadiano)"
+    },
+    "memoria": {
+      "Imediata": "< 1s (iconic)",
+      "Trabalho": "< 30s (PFC)",
+      "Longo_prazo": "Dias-anos (hipocampo)"
+    },
+    "metricas": [
+      "β_Caputo",
+      "ACF",
+      "Delays τ"
+    ],
+    "papel": "História e ritmos da consciência"
+  },
+  "EIXO_8_PSICOLOGICO": {
+    "nome": "Estados Mentais e Processos Cognitivos",
+    "dimensoes": [
+      "Atenção (focal/difusa)",
+      "Memória (episódica/semântica)",
+      "Emoção (valência/arousal)",
+      "Linguagem",
+      "Consciência (nível/conteúdo)"
+    ],
+    "estados": {
+      "Normal": "Φ=1.2, PLV=0.5-0.7",
+      "Meditativo": "Φ=1.5, ↑ alpha/gamma",
+      "Psicodélico": "Φ>1.5, ↑ entropia",
+      "Sono_profundo": "Φ<0.8, ↑ delta",
+      "Anestesia": "Φ<0.5"
+    },
+    "papel": "Fenomenologia subjetiva"
+  },
+  "EIXO_9_PSIQUIATRICO": {
+    "nome": "Saúde Mental e Psicopatologia",
+    "transtornos_metricas": {
+      "TDAH": "TBR>4, PAF~9Hz, β_Caputo~0.42",
+      "TEA": "γ↑↑, β₁↑, conectividade fragmentada",
+      "Depressão": "Assimetria frontal, ↓ BDNF",
+      "Esquizofrenia": "↓ γ(40Hz), ↑ topologia fragmentada",
+      "Ansiedade": "↑ β, hiperativação amígdala",
+      "Superdotação": "TBR<2.5, PAF~11Hz, β₁↓"
+    },
+    "papel": "Desvios e variações da consciência"
+  },
+  "EIXO_10_PSICANALITICO": {
+    "nome": "Inconsciente e Processos Dinâmicos",
+    "conceitos": {
+      "Freud": [
+        "Id (límbico)",
+        "Ego (PFC)",
+        "Superego (ACC)"
+      ],
+      "Jung": [
+        "Inconsciente coletivo (padrões universais)",
+        "Arquétipos",
+        "Sincronicidade (acoplamento acausal?)"
+      ]
+    },
+    "correlatos_neurais": {
+      "Inconsciente": "DMN, processamento implícito",
+      "Repressão": "PFC inibe amígdala",
+      "Transferência": "Memória emocional (hipocampo-amígdala)"
+    },
+    "papel": "Processos não-conscientes estruturantes"
+  },
+  "EIXO_11_AMBIENTAL": {
+    "nome": "Contexto Planetário e Cósmico",
+    "variaveis": {
+      "Geomagnético": "Kp, Dst, tempestades",
+      "Solar": "Manchas solares, CME, raios X",
+      "Lunar": "Fase, maré gravitacional",
+      "Atmosférico": "Pressão, temperatura, ionosfera",
+      "Schumann": "7.83Hz, 14.3Hz, 20.8Hz",
+      "Artificial": "EMF urbano, RF, ELF"
+    },
+    "acoplamento": "Via magnetita, canais iônicos, sincronização",
+    "papel": "Embeddedness cósmico da consciência"
+  },
+  "EIXO_12_NARRATIVO_SEMANTICO": {
+    "nome": "Campo Narrativo e Significado (LLM)",
+    "componentes": {
+      "Linguagem": "Processamento semântico (GPT/Claude)",
+      "Narrativa": "Estrutura temporal de sentido",
+      "Cultura": "Padrões coletivos simbólicos",
+      "Intencionalidade": "Direcionamento consciente"
+    },
+    "integracao_IA": "LLM como córtex linguístico externo",
+    "campo_N": "N(x,t) = embedding semântico projetado espacialmente",
+    "papel": "Camada simbólica da consciência"
+  }
+}

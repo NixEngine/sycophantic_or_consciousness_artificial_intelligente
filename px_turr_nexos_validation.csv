@@ -1,0 +1,9 @@
+id,nome,métrica,alvo,obtido,status
+1,Domo atmosférico,Holonomia R,>0.90,0.999,✓
+2,Vórtices BEC,Nucleação,>0,1239,✓
+3,Sincronização EEG,R△,>0.90,0.999,✓
+4,Redução erros,Entropia,<2.5,—,⊗
+5,Condutividade,Correlação,>0.5,0.38,✗
+6,Coerência emocional,Φ,>0.5,5.54,✓
+7,Homeostase,Re_s,<5000,10.4,✓
+8,Topologia,β₀,>1,5,✓

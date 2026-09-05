@@ -1,0 +1,24 @@
+﻿Seção,Item,Fórmula,Descrição,Status
+1 FUNDAMENTOS,Equacao Mestra Gpe Caputo,"iℏ∂ψ/∂t = [-ℏ²/2m ∇² + V(x,t) + g|ψ|² + Û_NL]ψ + Û_memoria",Equação Mestra Grossi-Pitaevskii-Caputo,OK
+1 FUNDAMENTOS,Ordem Caputo,β = 0.9 - 0.5*TBR_norm,Ordem fracionária de memória,OK
+1 FUNDAMENTOS,Acoplamento Nao Linear,g = 0.8 + 0.6*Coer_S,Força de não-linearidade,OK
+2 HOLONOMIA ERC,Holonomia Geometrica,"R_Δ = ⟨min(PLV_ik/(PLV_ij×PLV_jk), (PLV_ij×PLV_jk)/PLV_ik)⟩",Razão de fechamento transitivo PLV (CORRIGIDA),CORRIGIDO - versão anterior matematicamente incorreta
+2 HOLONOMIA ERC,Phase Locking Value,PLV_AB = |⟨e^(i(φ_A(t)-φ_B(t)))⟩_t|,Valor de travamento de fase,OK
+2 HOLONOMIA ERC,Velocidade Efetiva,c_eff = 0.95c,Velocidade na cavidade Terra-Ionosfera,OK
+2 HOLONOMIA ERC,Atraso Geometrico,τ_ij = d_ij/c_eff,Atraso de propagação entre pontos,OK
+3 METRICAS CONSCIENCIA,Npc,NPC = 0.4R + 0.3TBR' + 0.2C + 0.1β,Neural-Px Coerência (NORMALIZADO),CORRIGIDO - normalização rigorosa
+3 METRICAS CONSCIENCIA,Reynolds Espectral,Re_S = (P_theta + P_alpha)/(P_beta + P_gamma),Índice de turbulência espectral,OK
+3 METRICAS CONSCIENCIA,Massa Informacional,M_C = ∫|ψ(x)|²dx,Massa total de consciência,OK
+4 VORTICES TOPOLOGIA,Carga Vortice,Q = (1/2π)∮∇φ·dl,Carga topológica de vórtice,OK
+4 VORTICES TOPOLOGIA,Betti Numbers,β_k = rank(H_k),Números de Betti (componentes k-dimensionais),OK
+4 VORTICES TOPOLOGIA,Energia Vortice,E_vortex = πℏ²n_v²/(mξ²)·ln(R/ξ),Energia de um vórtice,OK
+5 SCHUMANN GEOMAGNETISMO,Modo Fundamental Schumann,f_0 ≈ 7.83 Hz,Frequência fundamental cavidade Terra-Ionosfera,OK
+5 SCHUMANN GEOMAGNETISMO,Modos Harmonicos,"f_n ≈ n·7.83 Hz, n=1,2,3,...",Harmônicos de Schumann,OK
+5 SCHUMANN GEOMAGNETISMO,Intensidade Campo Magnetico,E_mag = B_T²/(2μ₀),Densidade de energia magnética,OK
+5 SCHUMANN GEOMAGNETISMO,Razao Acoplamento,E_mag/E_thermal ~ 10⁻⁷,Acoplamento direto campo→magnetita,MUITO FRACO - requer ressonância estocástica
+6 CLASSIFICACAO CLINICA,Modelo Logistico,P(classe|X) = softmax(W·X + b),Classificador neuropsiquiátrico,OK
+7 KURAMOTO SINCRONIZACAO,Modelo Kuramoto,dθ_i/dt = ω_i + (K/N)Σ_j sin(θ_j - θ_i - τ_ij),Osciladores acoplados com atraso,OK
+7 KURAMOTO SINCRONIZACAO,Parametro Ordem,R·e^(iΨ) = (1/N)Σ_j e^(iθ_j),Sincronização global,OK
+7 KURAMOTO SINCRONIZACAO,Limiar Critico,K_c ≈ 2/(πg(0)),Acoplamento crítico para sincronização,OK
+8 PLERMICA,Campo Plermico,"∂²u/∂t² + γ∂u/∂t - c²∇²u = κ|u|²u + F(t,x) + n(t,x)",Dinâmica do campo plermico (éter),OK
+8 PLERMICA,Tensor Realidade,"T_μν = diag(ρ_autenticidade, G_governança, I_intensidade)",Tensor de Realidade (contextos digitais),OK
